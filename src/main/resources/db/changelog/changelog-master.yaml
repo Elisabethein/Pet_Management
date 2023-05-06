@@ -1,0 +1,97 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create_pets_table
+      author: local
+      changes:
+        - createTable:
+            tableName: pets
+            columns:
+              - column:
+                  name: id
+                  type: Long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: code
+                  type: Long
+              - column:
+                  name: type
+                  type: varchar(255)
+              - column:
+                  name: fur
+                  type: varchar(255)
+              - column:
+                  name: origin
+                  type: varchar(255)
+  - changeSet:
+      id: add_pets_seq
+      author: local
+      changes:
+        - createSequence:
+            sequenceName: pets_seq
+            startValue: 10
+            incrementBy: 1
+  - changeSet:
+      id: pet1
+      author: local
+      changes:
+        - insert:
+            tableName: pets
+            columns:
+              - column:
+                  name: name
+                  value: 'Mustikas'
+              - column:
+                  name: code
+                  value: '202211151535'
+              - column:
+                  name: type
+                  value: 'Cat'
+              - column:
+                  name: fur
+                  value: 'Black'
+              - column:
+                  name: origin
+                  value: 'Estonia'
+        - insert:
+            tableName: pets
+            columns:
+              - column:
+                  name: name
+                  value: 'Roy'
+              - column:
+                  name: code
+                  value: '202211151536'
+              - column:
+                  name: type
+                  value: 'Dog'
+              - column:
+                  name: fur
+                  value: 'Brown'
+              - column:
+                  name: origin
+                  value: 'Latvia'
+        - insert:
+            tableName: pets
+            columns:
+              - column:
+                  name: name
+                  value: 'Charles'
+              - column:
+                  name: code
+                  value: '202211151537'
+              - column:
+                  name: type
+                  value: 'Horse'
+              - column:
+                  name: fur
+                  value: 'White'
+              - column:
+                  name: origin
+                  value: 'Norway'
+
