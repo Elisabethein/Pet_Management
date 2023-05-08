@@ -59,8 +59,8 @@ Please refer to the README in the front-end repository for more information abou
 
 Link: https://github.com/Elisabethein/Pet_Management_App
 
-The back-end took approximately 10 hours to develop, as the developer was new to Spring Boot and wanted to learn as much as possible during the project.
-I would refer to these followeing materials:
+The back-end took approximately 10 hours to develop, as I was new to Spring Boot and wanted to learn as much as possible during the project.
+I would refer to these following learning materials:
 
 https://github.com/getarrays/employeemanagerapp.git 
 
@@ -68,15 +68,17 @@ https://www.youtube.com/@amigoscode (Spring boot tutorials)
 
 I will include some thoughts about this project in a free-form manner (which may include some aspects of the front-end, but I encourage you to also read the information in the other repository):
 
-I found it very satisfying to see different pieces of my previous knowledge come together in this project, and that's exactly what I would want to do and practice more.
+I found it very satisfying to see different pieces of my previous knowledge come together in this project, and that's exactly what I would want to do and practice more. As most technologies were quite new to me, I'm satisfied I was able to learn so much about them in such a short time.
 
-Since I had no prior experience with Liquibase, I am unsure if I implemented it correctly. I might have some troubles with the output file for Liquibase.
+Since I had no prior experience with Liquibase, I am unsure if I implemented it correctly. It might have some troubles with the output file for Liquibase.
 
 I also created IDs for each pet because I was uncertain if pet codes would be unique for every pet.
 
 Improvements:
 
-I would like to add login capabilities for users with various access levels. I have learned how to create database users with different permissions, and I think this knowledge would come in handy. 
+I would like to add login capabilities for users with various access levels. I have learned how to create database users with different permissions, and I think this knowledge would come in handy.
+
+In my solution I allow users to write whichever country their pet is originated from but an exception handling could be added, which checks if the input is correct.
 
 To change the order of pets, I envision a bar with sorting options that allow users to arrange their pets in various ways.
 
