@@ -16,7 +16,7 @@ Spring Boot Framework
 
 
 ## Main Files
-Here are the main files used in this project:
+Here are the main files used in this project (mainly in the newpets folder):
 
 PetsApplication.java
 This is the Spring Boot application that starts the server when run.
